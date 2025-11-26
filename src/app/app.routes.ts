@@ -1,0 +1,11 @@
+import { Routes } from '@angular/router';
+import { ConnexionComponent } from './connexion/connexion.component';
+import { InscriptionComponent } from './inscription/inscription.component';
+import { AccueilComponent } from './accueil/accueil.component';
+
+export const routes: Routes = [
+  { path: '', redirectTo: 'connexion', pathMatch: 'full' },
+  { path: 'connexion', component: ConnexionComponent },
+  { path: 'inscription', component: InscriptionComponent },
+  { path: 'accueil', component: AccueilComponent }
+];

@@ -1,0 +1,14 @@
+import { Component, signal } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { NavComponent } from './nav/nav.component.';
+
+@Component({
+  selector: 'app-root',
+  imports: [RouterOutlet,NavComponent],
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+
+})
+export class AppComponent {
+  protected readonly title = signal('projet_yasmina');
+}
